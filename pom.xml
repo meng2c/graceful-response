@@ -158,6 +158,40 @@
                 </repository>
             </distributionManagement>
         </profile>
+
+        <profile>
+            <id>rdc</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <distributionManagement>
+                <repository>
+                    <id>rdc-releases</id>
+                    <name>rdc-releases</name>
+                    <url>${distributionRepositoryUrl}</url>
+                </repository>
+                <snapshotRepository>
+                    <id>rdc-snapshots</id>
+                    <name>rdc-snapshots</name>
+                    <url>${distributionSnapshotRepositoryUrl}</url>
+                </snapshotRepository>
+            </distributionManagement>
+        </profile>
+        <profile>
+            <id>haishu</id>
+            <distributionManagement>
+                <repository>
+                    <id>haishu-nexus-releases</id>
+                    <name>haishu-nexus-releases</name>
+                    <url>${distributionRepositoryUrl}</url>
+                </repository>
+                <snapshotRepository>
+                    <id>haishu-nexus-snapshots</id>
+                    <name>haishu-nexus-snapshots</name>
+                    <url>${distributionSnapshotRepositoryUrl}</url>
+                </snapshotRepository>
+            </distributionManagement>
+        </profile>
     </profiles>
 
     <build>
